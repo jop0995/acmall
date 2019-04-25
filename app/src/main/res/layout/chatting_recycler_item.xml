@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="25dp">
+
+    <TextView
+        android:id="@+id/nickNameTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="#25f1c056"
+        android:gravity="center_vertical|center"
+        android:text="nickName"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/messageTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="left|center"
+        android:text="TextView"
+        android:textColor="@android:color/white" />
+</LinearLayout>

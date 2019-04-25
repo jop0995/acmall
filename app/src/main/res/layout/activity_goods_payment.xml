@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".goodsList.GoodsPaymentActivity">
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/completeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backBtn">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="결제 정보"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="48dp" />
+
+            <TextView
+                android:id="@+id/addressTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/border"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="주소찾기를 눌러 주소를 입력해주세요."
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="147dp" />
+
+            <EditText
+                android:id="@+id/addressDetailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="상세주소 입력해주세요."
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="172dp" />
+
+            <EditText
+                android:id="@+id/requestEdit"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="요청사항을 입력하세요."
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/phoneNumEdit"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="핸드폰 번호를 입력하세요"
+                android:inputType="numberSigned"
+                android:paddingLeft="5dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="결제금액"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/priceTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="50000원"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/completeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/colorAccent"
+        android:text="결제하기"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
